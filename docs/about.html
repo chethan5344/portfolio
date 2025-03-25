@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li>
+        <h1>
+          <a href="index.html"><span class="fa-solid fa-ghost" aria-hidden="true"></span><span>Chethan R G</span></a>
+        </h1>
+      </li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li>
+        <a href="https://www.linkedin.com/in/rgchethan" target="_blank">
+          <span class="fa-brands fa-linkedin"></span>
+          <span class="sr-only">LinkedIn</span></a>
+      </li>
+      <li>
+        <a href="https://github.com/chethan5344" target="_blank"><span class="fa-brands fa-square-github"></span><span class="sr-only">Github</span></a>
+      </li>
+      <!-- <li><a href="" class="button">Resume</a></li> -->
+    </ul>
+  </nav>
+  <div class="section-dblue">
+    <section id="projects">
+      <h2>About Chethan R G</h2>
+      <article>
+        <div class="text">
+          <h3>Just the highlights</h3>
+          <p class="black-box">
+            Hey there! I’m a curious mind with a passion for technology, problem-solving, and continuous learning. While
+            I spend a lot of time crafting seamless web experiences as a React Developer, there’s more to me than just
+            coding!
+          </p>
+          <p class="black-box">
+            I love exploring new technologies, breaking things to understand how they work, and building creative
+            solutions to real-world problems. Whether it's tweaking a piece of code for better performance or diving
+            into a new JavaScript framework, I'm always up for a challenge.
+          </p>
+          <section class="black-box">
+            <h4>When I’m not coding, you’ll probably find me:</h4>
+            <ul>    
+              <li>Playing video games 🎮 (strategy, open-world, or anything that challenges my mind)</li>
+              <li>Exploring new places 🌍 (I love traveling and discovering hidden gems)</li>
+              <li>Tinkering with gadgets 🔧 (tech experiments and side projects keep me busy)</li>
+              <li>Listening to music & podcasts 🎵 (especially tech, productivity, and self-growth topics)</li>
+            </ul>
+          </section>
+          <p class="black-box">
+            I believe in continuous growth—whether it’s learning new skills, meeting interesting people, or pushing
+            myself outside my comfort zone.
+          </p>
+          <h4>Tech Stack:</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>Git</li>
+            <li>Docker</li>
+            <li>Azure DevOps</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+        <img src="./photo_6273603204386246366_y.jpg" alt="ScreenShot of wall of wonder">
+      </article>
+    </section>
+  </div>
+
+  <div class="gradient"></div>
+
+  <footer id="footer">
+    <h2>Chethan R G &middot; Software Developer</h2>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/rgchethan" target="_blank">
+          <span class="fa-brands fa-linkedin"></span>
+          <span class="sr-only">LinkedIn</span></a>
+      </li>
+      <li>
+        <a href="https://github.com/chethan5344" target="_blank">
+          <span class="fa-brands fa-square-github"></span>
+          <span class="sr-only">Github</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:chethanrg56@gmail.com">
+          <span class="fas fa-envelope" aria-hidden="true"></span>
+          <span class="sr-only">Email</span>
+        </a>
+      </li>
+    </ul>
+    <p id="rights"></p>
+  </footer>
+  <script>
+    const rights = document.getElementById('rights');
+    const currentYear = new Date().getFullYear();
+    rights.innerHTML = `<small>&copy; ${currentYear} Chethan R G. All rights reserved</small>`;
+  </script>
+</body>
+
+</html>
