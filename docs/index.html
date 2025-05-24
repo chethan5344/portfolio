@@ -12,6 +12,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="description"
+    content="Chethan R G - Frontend Developer specializing in React, TypeScript, and JavaScript" />
+  <meta name="keywords" content="frontend developer, react, typescript, javascript, web development" />
+  <meta property="og:title" content="Chethan R G - Frontend Developer Portfolio" />
+  <meta property="og:description" content="Frontend Developer specializing in React, TypeScript, and JavaScript" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 
@@ -26,23 +33,29 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="#contact">Contact</a></li>
+      <!-- <li><a href="#resume">Resume</a></li> -->
       <li>
         <a href="https://www.linkedin.com/in/rgchethan" target="_blank">
           <span class="fa-brands fa-linkedin"></span>
           <span class="sr-only">LinkedIn</span></a>
       </li>
       <li>
-        <a href="https://github.com/chethan5344" target="_blank"><span class="fa-brands fa-square-github"></span><span class="sr-only">Github</span></a>
+        <a href="https://github.com/chethan5344" target="_blank"><span class="fa-brands fa-square-github"></span><span
+            class="sr-only">Github</span></a>
       </li>
-      <!-- <li><a href="" class="button" target="_blank">Resume</a></li> -->
+      <li>
+        <button id="darkModeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      </li>
     </ul>
   </nav>
 
   <section id="intro">
     <p class="name">Hi, my name is <span>Chethan R G.</span></p>
-    <h2>FullStack Developer.</h2>
+    <h2>FrontEnd Developer.</h2>
     <p>
-      I'm a developer specializing in html, css, javascript, react and golang.
+      I'm a developer specializing in React Js, Typescript, Javascript, Node Js.
     </p>
     <p>
       Currently I'm woking at
@@ -72,9 +85,14 @@
               <li>Developed sales reports and analytics dashboards for better decision-making.</li>
               <li>Built stock management features to help distributors monitor and control inventory in real time.</li>
               <li>Designed and integrated onboarding workflows for new clients, improving user engagement.</li>
-              <li>Implemented Jio Pay payment integration to facilitate smooth and secure transactions.</li>
+              <li>Rewrote and stabilized the payment module, which was previously causing frequent bugs, delivering a
+                permanent and reliable fix.</li>
               <li>Optimized UI components for better performance, accessibility, and responsiveness across devices.</li>
               <li>Collaborated with backend teams to ensure smooth API integrations and data handling.</li>
+              <li>Revamped 80% of the front-end UI based on new designs, improving user experience and maintaining
+                design consistency across modules.</li>
+              <li>Minimized the overall front-end codebase by 30% through refactoring and removal of redundant logic.
+              </li>
             </ul>
             <h4>Impact:</h4>
             <ul>
@@ -84,14 +102,50 @@
             </ul>
           </section>
           <h4>Technologies used include:</h4>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>React</li>
-            <li>Redux</li>
-            <li>Webpack</li>
-            <li>Docker</li>
+          <ul id="stack">
+            <li role="link"><span class="svg"><svg width="100%" height="100%" viewBox="-10.5 -9.45 21 18.9" fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="text-sm me-0 w-10 h-10 text-brand dark:text-brand-dark flex origin-center transition-all ease-in-out">
+                  <circle cx="0" cy="0" r="2" fill="#58c4dc"></circle>
+                  <g stroke="#58c4dc" stroke-width="1" fill="none">
+                    <ellipse rx="10" ry="4.5"></ellipse>
+                    <ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse>
+                    <ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse>
+                  </g>
+                </svg>
+              </span>
+              React
+            </li>
+            <li><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="#F0DB4F" d="M.264.264h23.472v23.472H.264z" />
+                  <path fill="#323330"
+                    d="M21.815 18.138c-.172-1.071-.87-1.97-2.939-2.809-.718-.33-1.519-.567-1.758-1.111-.085-.317-.096-.495-.042-.687.154-.622.897-.817 1.486-.638.379.127.738.419.955.886 1.013-.656 1.011-.652 1.718-1.102-.259-.401-.397-.587-.567-.758-.609-.68-1.439-1.031-2.767-1.004l-.692.089c-.663.167-1.294.515-1.664.982-1.111 1.261-.794 3.467.558 4.375 1.332 1 3.289 1.227 3.539 2.162.243 1.145-.841 1.515-1.919 1.383-.794-.165-1.236-.569-1.714-1.303-.879.509-.879.509-1.783 1.028.214.469.44.681.799 1.087 1.7 1.725 5.955 1.64 6.718-.971.031-.09.236-.687.071-1.609m-8.79-7.086h-2.195l-.009 5.676c0 1.207.062 2.314-.134 2.653-.321.667-1.153.584-1.533.455-.386-.19-.582-.46-.81-.841-.062-.109-.109-.194-.125-.201l-1.785 1.093c.297.609.734 1.138 1.294 1.481.837.502 1.961.656 3.137.386.765-.223 1.426-.685 1.772-1.388.5-.922.393-2.037.388-3.271.011-2.013 0-4.025 0-6.044" />
+                </svg></span>Javascript</li>
+            <li><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -0.18 7.68 7.68"
+                  preserveAspectRatio="xMidYMid">
+                  <path
+                    d="M5.321 5.092a.549.549 0 0 0-.058-1.095h-.02a.547.547 0 0 0-.372.929c-.332.655-.84 1.134-1.603 1.534a2.64 2.64 0 0 1-1.593.303c-.44-.059-.782-.254-.997-.577C.365 5.707.336 5.189.6 4.671c.186-.371.479-.645.665-.782a5 5 0 0 1-.127-.498C-.279 4.417-.132 5.805.298 6.46c.323.489.977.792 1.701.792q.293.002.586-.068c1.251-.244 2.199-.987 2.736-2.092m1.72-1.212c-.743-.87-1.837-1.349-3.088-1.349h-.156a.54.54 0 0 0-.479-.293h-.02a.546.546 0 0 0-.527.567.55.55 0 0 0 .547.528h.02a.55.55 0 0 0 .479-.332h.176c.743 0 1.446.215 2.082.635.489.323.84.743 1.036 1.251.166.41.156.811-.02 1.153-.274.518-.733.801-1.339.801-.391 0-.762-.117-.958-.205a6 6 0 0 1-.44.352c.42.195.85.303 1.261.303.938 0 1.632-.518 1.896-1.036.283-.567.264-1.544-.469-2.375M2.077 5.258a.55.55 0 0 0 .547.528h.02a.547.547 0 0 0-.019-1.095h-.02c-.02 0-.049 0-.068.01a3.58 3.58 0 0 1-.508-2.17 2.62 2.62 0 0 1 .577-1.515c.283-.362.831-.538 1.202-.547C4.844.449 5.284 1.74 5.313 2.258c.127.029.342.098.489.147C5.683.821 4.706 0 3.768 0c-.88 0-1.691.635-2.013 1.574-.45 1.251-.156 2.453.391 3.401a.44.44 0 0 0-.068.283z"
+                    fill="#764ABC" />
+                </svg></span>Redux</li>
+            <li><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -1.74 7.68 7.68"
+                  preserveAspectRatio="xMidYMid">
+                  <path
+                    d="M2.342 2.778a.696.696 0 1 0 0-1.392.696.696 0 0 0 0 1.392M.696 4.171a.696.696 0 1 0 0-1.39.696.696 0 0 0 0 1.389m6.287 0a.696.696 0 1 0 0-1.392.696.696 0 0 0 0 1.392" />
+                  <path
+                    d="M4.697 2.111c-.022-.233-.034-.426-.212-.562-.226-.172-.481-.061-.796-.174A.7.7 0 0 1 3.15.697c0-.385.317-.697.709-.697a.71.71 0 0 1 .649.416c.168.319.059.644.27.808.25.194.587.052.963.235a.7.7 0 0 1 .295.253.7.7 0 0 1 .114.38.7.7 0 0 1-.539.677c-.315.114-.571.002-.796.174-.254.194-.118.518-.325.86a.71.71 0 0 1-.631.38.703.703 0 0 1-.709-.697c0-.28.167-.521.409-.632.376-.184.713-.042.963-.235.144-.112.175-.284.175-.508"
+                    fill="#D0021B" />
+                </svg></span>React Router</li>
+            <li><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="#8ed6fb"
+                    d="m21.992 18.394-9.572 5.419v-4.221l5.955-3.279zm.656-.593V6.478l-3.502 2.025v7.277l3.501 2.019zm-20.64.593 9.563 5.415v-4.217l-5.957-3.279zm-.656-.593V6.478l3.502 2.025v7.277zm.411-12.056L11.58.188v4.08L5.289 7.727l-.051.028zm20.471 0L12.42.188v4.08l6.291 3.457.051.028 3.476-2.008z" />
+                  <path fill="#1c78c0"
+                    d="m11.58 18.632-5.886-3.238V8.985l5.886 3.39zm.84 0 5.886-3.234V8.985l-5.886 3.39zM6.094 8.25 12 4.999l5.906 3.251L12 11.655z" />
+                </svg></span>Webpack</li>
+            <li><span><svg width="24" height="24" viewBox="0 0 0.48 0.48" xmlns="http://www.w3.org/2000/svg"
+                  fill="none">
+                  <path fill="#2396ED"
+                    d="M.37.136.374.129l.008.005.003.002a.08.08 0 0 1 .03.051l.02-.002q.024.001.033.007l.003.002.002.001L.479.2.477.206.463.228a.07.07 0 0 1-.048.021H.406a.3.3 0 0 1-.051.092.2.2 0 0 1-.052.045.2.2 0 0 1-.076.029.3.3 0 0 1-.059.006.2.2 0 0 1-.106-.024.12.12 0 0 1-.048-.065A.3.3 0 0 1 0 .247.015.015 0 0 1 .013.232h.325A.1.1 0 0 0 .366.224.07.07 0 0 1 .358.168L.367.144zM.087.174.09.176v.041L.088.219H.044L.04.216v-.04L.042.174zm.058 0 .002.002v.041L.146.219H.103L.099.216v.001-.04L.102.173h.001zm.059 0 .002.002v.041L.205.219H.162L.158.216v-.04L.16.174zm.059 0 .002.002v.04L.263.22H.221L.217.217V.176L.219.174h.043zm.059 0 .002.002v.04L.322.22H.28L.276.217V.176L.278.174h.043zM.145.117l.002.002v.04L.145.163H.103L.099.16V.121L.102.117zm.059 0 .002.002v.04L.204.163H.162L.158.16V.12L.16.118zm.059 0q.003 0 .004.003v.04L.264.164H.221L.217.161V.12L.219.118h.043zm0-.057q.003 0 .004.003v.04L.264.107H.221L.217.104V.063L.219.061.221.06z" />
+                </svg></span>Docker</li>
           </ul>
         </div>
         <img src="./liveorderHome.png" alt="ScreenShot of LiveOrder">
@@ -111,6 +165,14 @@
       <a href="mailto:chethanrg56@gmail.com" class="button"> Email me</a>
     </section>
   </div>
+
+  <div class="gradient"></div>
+
+  <!-- <section id="resume">
+    <h2>Resume</h2>
+    <p>Download my resume to learn more about my experience and skills.</p>
+    <a href="resume.pdf" class="button" download>Download Resume</a>
+  </section> -->
 
   <div class="gradient"></div>
 
@@ -141,6 +203,14 @@
     const rights = document.getElementById('rights');
     const currentYear = new Date().getFullYear();
     rights.innerHTML = `<small>&copy; ${currentYear} Chethan R G. All rights reserved</small>`;
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const icon = darkModeToggle.querySelector('i');
+      icon.classList.toggle('fa-moon');
+      icon.classList.toggle('fa-sun');
+    });
   </script>
   </footer>
 </body>
